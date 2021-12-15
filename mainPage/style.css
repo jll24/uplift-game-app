@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  font-family: "Merriweather Sans", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
+}
+.container {
+  position: relative;
+  width: 75%;
+  height: 500px;
+  background: none;
+}
+.container .clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.container .clip.clip1 {
+  background: url(./Images/roulette.jpg);
+  background-size: cover;
+  clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
+}
+.container .clip.clip2 {
+  background: url(./Images/slot-machine.jpg);
+  background-size: cover;
+  clip-path: polygon(65% 0, 100% 0, 100% 100%, 35% 100%);
+}
+.container:hover .clip {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.container .clip:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.content,
+.background {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .clip:hover .content {
+  bottom: 5%;
+  opacity: 100%;
+}
+.container .clip:hover .background {
+  bottom: 0;
+  background: rgb(20, 20, 20);
+  height: 260px;
+  opacity: 65%;
+}
+a {
+  padding: 18px;
+  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: rgb(70, 189, 70);
+}
+p {
+  color: rgb(250, 159, 159);
+}
+a:active {
+  background: gray;
+  transition: 0.2s;
+}

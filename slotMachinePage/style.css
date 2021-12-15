@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+* {
+    color: white;
+}
+
+body {
+    font-family: Arial;
+    background: url(../lotteryPage/Images/woodenBg.jpg);
+    background-size: cover;
+}
+.entire {
+    width: 75%;
+    height: 70%;
+    border: 5px ridge silver;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    background: url(./Images/machineBg.jpg);
+    /* max-width: 30%; */
+}
+.display,
+.scores,
+.controls {
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+.scores {
+    display: flex;
+    justify-content: center;
+}
+.reels {
+    min-width: 22%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px ridge gold;
+    display: inline-block;
+    background-color: white;
+}
+.reels img {
+    height: 70px;
+    width: 70px;
+}
+.scores {
+    background-color: rgb(60, 0, 128);
+    border-radius: 30px;
+    border: 5px ridge silver;
+    padding: 10px;
+}
+.controls {
+    background: none;
+    border: 4px ridge white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+input[type=text] {
+    width: 50px;
+}
+label {
+    display: inline-block;
+    width: 60px;
+    font-family: 'Dosis', sans-serif;
+}
+form label {
+    font-size: 30px;
+    background: gray;
+}
+#amount,
+#win,
+#bet,
+#bet option,
+span {
+    color: black;
+}
+#spin {
+    padding: 25px;
+    border-radius: 15px;
+    background-color: red;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+}
+#spin:hover {
+    cursor: pointer;
+}
+.paytable {
+    width: 95%;
+    border-radius: 5px;
+    border: 2px ridge gold;
+    margin: auto;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.paytable img {
+    width: 20px;
+    float: left;
+}
+.left {
+    clear: left;
+    display: flex;
+    justify-content: space-around;
+}
+.right {
+    display: flex;
+    justify-content: space-around;
+}
+.paytable span {
+    line-height: 35px;
+}
+.column {
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    vertical-align: top;
+}
+.legend {
+    height: 30px;
+    width: 40px;
+}
+.special {
+    margin: 0px;
+}
+
+
+
